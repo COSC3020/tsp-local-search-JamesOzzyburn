@@ -1,3 +1,4 @@
+[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-718a45dd9cf7e7f842a935f5ebbe5719a5e09af4491e668f4dbf3b35d5cca122.svg)](https://classroom.github.com/online_ide?assignment_repo_id=13131212&assignment_repo_type=AssignmentRepo)
 # Traveling Salesperson Problem -- Local Search
 
 This exercise is about the Traveling Salesperson Problem I mentioned in the
@@ -50,3 +51,8 @@ Test your new function; I've provided some basic testing code in `code.test.js`.
 What is the worst-case asymptotic time complexity of your implementation? What
 is the worst-case asymptotic memory complexity? Add your answer, including your
 reasoning, to this markdown file.
+
+## Answer
+For the beginning of my algorithm it creates a list (route) and that takes $n$ time it then randomizes/shuffles the list and that also takes $n$ time. So we have $n^2$ for now. In the part of the code that runs the twoOptSwap it runs through all possible permutations and I think that there are $n!$ of them. So in total the worst total time compliexity is $\Theta(n^2 + n!)$.
+
+For memory complexity my algorithm creates the inital route of $n$ items and then later in the program it creates a newRoute of $n$ items and everything else is a constant. So the total momory complexity is $\Theta(n)$
